@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">TestingFragments2210</string>
+    <string name="button_text">Buscar</string>
+    <string name="label_text">Buscar</string>
+</resources>
