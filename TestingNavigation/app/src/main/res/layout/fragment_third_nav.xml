@@ -4,21 +4,22 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SecondNavFragment">
+    tools:context=".ThirdNavFragment">
 
     <!-- TODO: Update blank fragment layout -->
     <TextView
+        android:id="@+id/textView2"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="@string/hello_secound_fragment" />
+        android:text="@string/hello_third_fragment" />
 
     <Button
-        android:id="@+id/button_f2_back"
+        android:id="@+id/button_f3_back"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:text="Volver"
         android:layout_marginStart="45dp"
         android:layout_marginEnd="45dp"
-        android:text="Volver"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

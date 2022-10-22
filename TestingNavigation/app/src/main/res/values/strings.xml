@@ -3,5 +3,9 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_first_fragment">Hello FIRST fragment</string>
     <string name="hello_secound_fragment">Hello SECOND fragment</string>
-    <string name="button_next_fragment">Navegar a siguiente fragment</string>
+    <string name="hello_third_fragment">Hello THIRD fragment</string>
+    <string name="button_next_fragment2">Navegar a Second Fragment</string>
+    <string name="button_next_fragment3">Navegar a Third Fragment</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

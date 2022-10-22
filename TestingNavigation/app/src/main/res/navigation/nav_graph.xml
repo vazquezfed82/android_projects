@@ -13,10 +13,26 @@
         <action
             android:id="@+id/action_firstNavFragment_to_secondNavFragment"
             app:destination="@id/secondNavFragment" />
+        <action
+            android:id="@+id/action_firstNavFragment_to_thirdNavFragment"
+            app:destination="@id/thirdNavFragment" />
     </fragment>
     <fragment
         android:id="@+id/secondNavFragment"
         android:name="com.example.testingnavigation.SecondNavFragment"
         android:label="fragment_second_nav"
-        tools:layout="@layout/fragment_second_nav" />
+        tools:layout="@layout/fragment_second_nav" >
+        <action
+            android:id="@+id/action_secondNavFragment_to_firstNavFragment"
+            app:destination="@id/firstNavFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/thirdNavFragment"
+        android:name="com.example.testingnavigation.ThirdNavFragment"
+        android:label="fragment_third_nav"
+        tools:layout="@layout/fragment_third_nav" >
+        <action
+            android:id="@+id/action_thirdNavFragment_to_firstNavFragment"
+            app:destination="@id/firstNavFragment" />
+    </fragment>
 </navigation>
