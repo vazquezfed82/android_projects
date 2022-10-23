@@ -27,7 +27,7 @@
             app:destination="@id/firstNavFragment" />
         <argument
             android:name="dato"
-            app:argType="string" />
+            app:argType="com.example.testingnavigation.Entities.Dato" />
     </fragment>
     <fragment
         android:id="@+id/thirdNavFragment"
@@ -37,5 +37,8 @@
         <action
             android:id="@+id/action_thirdNavFragment_to_firstNavFragment"
             app:destination="@id/firstNavFragment" />
+        <argument
+            android:name="dato"
+            app:argType="string" />
     </fragment>
 </navigation>

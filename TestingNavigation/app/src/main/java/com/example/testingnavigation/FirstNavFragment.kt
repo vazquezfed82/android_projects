@@ -8,6 +8,7 @@ import android.view.ViewGroup
 import android.widget.Button
 import android.widget.EditText
 import androidx.navigation.fragment.findNavController
+import com.example.testingnavigation.Entities.Dato
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -46,8 +47,7 @@ class FirstNavFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         val navigateButton2 = view.findViewById<Button>(R.id.button_next_fragment2)
         val navigateButton3 = view.findViewById<Button>(R.id.button_next_fragment3)
-        //val textoAEnviar = view.findViewById<EditText>(R.id.edit_text_textoAEnviar)
-        //val arg2 = textoAEnviar.text.toString()
+        val textoAEnviar = view.findViewById<EditText>(R.id.edit_text_textoAEnviar)
 
         navigateButton2.setOnClickListener {
             findNavController().navigate(R.id.action_firstNavFragment_to_secondNavFragment)
@@ -55,11 +55,19 @@ class FirstNavFragment : Fragment() {
 
         //Paso un argumento
         navigateButton3.setOnClickListener {
-            val action = FirstNavFragmentDirections.actionFirstNavFragmentToSecondNavFragment("Datito loco")
+            val action = FirstNavFragmentDirections.actionFirstNavFragmentToThirdNavFragment(textoAEnviar.text.toString())
             findNavController().navigate(action)
         }
 
-        //navigateButton3.setOnClickListener {
+
+        navigateButton2.setOnClickListener {
+            val data = Dato(textoAEnviar.text.toString())
+            val action = FirstNavFragmentDirections.actionFirstNavFragmentToSecondNavFragment(data)
+            findNavController().navigate(action)
+        }
+
+        //Navegar sin argumentos
+        //navigateButton2.setOnClickListener {
         //    findNavController().navigate(R.id.action_firstNavFragment_to_thirdNavFragment)
         // }
 

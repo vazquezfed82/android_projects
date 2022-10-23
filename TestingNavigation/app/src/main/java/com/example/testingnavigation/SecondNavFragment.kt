@@ -43,10 +43,16 @@ class SecondNavFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
+
+
+
         val navigateButtonBack = view.findViewById<Button>(R.id.button_f2_back)
         navigateButtonBack.setOnClickListener {
             findNavController().navigate(R.id.action_secondNavFragment_to_firstNavFragment)
         }
+
+        val label = view.findViewById<TextView>(R.id.textView4)
+        label.text = SecondNavFragmentArgs.fromBundle(requireArguments()).dato.nombre
     }
 
     companion object {

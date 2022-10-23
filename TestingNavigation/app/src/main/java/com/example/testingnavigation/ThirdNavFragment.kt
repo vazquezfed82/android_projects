@@ -48,6 +48,9 @@ class ThirdNavFragment : Fragment() {
             findNavController().navigate(R.id.action_thirdNavFragment_to_firstNavFragment)
         }
 
+        val label = view.findViewById<TextView>(R.id.textView3)
+        label.text = ThirdNavFragmentArgs.fromBundle(requireArguments()).dato
+
     }
 
 

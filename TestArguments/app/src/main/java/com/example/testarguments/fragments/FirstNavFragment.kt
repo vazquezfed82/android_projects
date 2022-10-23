@@ -47,6 +47,7 @@ class FirstNavFragment : Fragment() {
 
         boton.setOnClickListener {
             val action = FirstNavFragmentDirections.actionFirstNavFragmentToSecondNavFragment("datito")
+
             findNavController().navigate(action)
         }
     }
