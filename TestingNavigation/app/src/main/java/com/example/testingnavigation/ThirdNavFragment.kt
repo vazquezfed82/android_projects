@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
+import android.widget.TextView
 import androidx.navigation.fragment.findNavController
 
 // TODO: Rename parameter arguments, choose names that match
@@ -46,6 +47,9 @@ class ThirdNavFragment : Fragment() {
         navigateButtonBack.setOnClickListener {
             findNavController().navigate(R.id.action_thirdNavFragment_to_firstNavFragment)
         }
+
+        val text = view.findViewById<TextView>(R.id.textView2)
+
     }
 
     companion object {

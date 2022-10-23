@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
+import android.widget.EditText
 import androidx.navigation.fragment.findNavController
 
 // TODO: Rename parameter arguments, choose names that match
@@ -31,6 +32,8 @@ class FirstNavFragment : Fragment() {
         }
     }
 
+
+
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -43,15 +46,22 @@ class FirstNavFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         val navigateButton2 = view.findViewById<Button>(R.id.button_next_fragment2)
         val navigateButton3 = view.findViewById<Button>(R.id.button_next_fragment3)
-
+        val textoAEnviar = view.findViewById<EditText>(R.id.edit_text_textoAEnviar)
+        val arg2 = textoAEnviar.text.toString()
 
         navigateButton2.setOnClickListener {
             findNavController().navigate(R.id.action_firstNavFragment_to_secondNavFragment)
         }
 
+        //Paso un argumento
         navigateButton3.setOnClickListener {
-            findNavController().navigate(R.id.action_firstNavFragment_to_thirdNavFragment)
+            val action = FirstNavFragmentDirections.actionFirstNavFragmentToThirdNavFragment("Hola soy el dato",arg2)
+            findNavController().navigate(action)
         }
+
+        //navigateButton3.setOnClickListener {
+        //    findNavController().navigate(R.id.action_firstNavFragment_to_thirdNavFragment)
+        // }
 
     }
 

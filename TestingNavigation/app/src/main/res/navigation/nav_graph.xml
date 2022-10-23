@@ -34,5 +34,11 @@
         <action
             android:id="@+id/action_thirdNavFragment_to_firstNavFragment"
             app:destination="@id/firstNavFragment" />
+        <argument
+            android:name="dato"
+            app:argType="string" />
+        <argument
+            android:name="texto"
+            app:argType="string" />
     </fragment>
 </navigation>
