@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">TestingNavBottomView</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment1">Hello FIRST fragment</string>
+    <string name="hello_blank_fragment2">Hello SECOND fragment</string>
+    <string name="hello_blank_fragment3">Hello THIRD fragment</string>
+</resources>
