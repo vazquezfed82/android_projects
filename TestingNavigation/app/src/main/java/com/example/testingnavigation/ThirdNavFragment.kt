@@ -48,9 +48,8 @@ class ThirdNavFragment : Fragment() {
             findNavController().navigate(R.id.action_thirdNavFragment_to_firstNavFragment)
         }
 
-        val text = view.findViewById<TextView>(R.id.textView2)
-
     }
+
 
     companion object {
         /**

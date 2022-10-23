@@ -46,8 +46,8 @@ class FirstNavFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         val navigateButton2 = view.findViewById<Button>(R.id.button_next_fragment2)
         val navigateButton3 = view.findViewById<Button>(R.id.button_next_fragment3)
-        val textoAEnviar = view.findViewById<EditText>(R.id.edit_text_textoAEnviar)
-        val arg2 = textoAEnviar.text.toString()
+        //val textoAEnviar = view.findViewById<EditText>(R.id.edit_text_textoAEnviar)
+        //val arg2 = textoAEnviar.text.toString()
 
         navigateButton2.setOnClickListener {
             findNavController().navigate(R.id.action_firstNavFragment_to_secondNavFragment)
@@ -55,7 +55,7 @@ class FirstNavFragment : Fragment() {
 
         //Paso un argumento
         navigateButton3.setOnClickListener {
-            val action = FirstNavFragmentDirections.actionFirstNavFragmentToThirdNavFragment("Hola soy el dato",arg2)
+            val action = FirstNavFragmentDirections.actionFirstNavFragmentToSecondNavFragment("Datito loco")
             findNavController().navigate(action)
         }
 
